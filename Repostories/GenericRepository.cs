@@ -1,4 +1,5 @@
 ﻿using Expense_Managment.Data;
+using Expense_Managment.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -17,7 +18,7 @@ namespace Expense_Managment.Repostories
             this._logger = logger;
         }
 
-        public virtual Task<IEnumerable<T>> All()
+        public Task<IEnumerable<T>> All()
         {
             throw new NotImplementedException();
         }
@@ -30,7 +31,7 @@ namespace Expense_Managment.Repostories
         public virtual async Task<bool> Add(T entity)
         {
             await dbSet.AddAsync(entity);
-             return true ;
+            return true;
         }
 
         public virtual Task<bool> Delete(int id)
@@ -46,6 +47,16 @@ namespace Expense_Managment.Repostories
         public virtual async Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate)
         {
             return await dbSet.Where(predicate).ToListAsync();
+        }
+
+        public Task<bool> Update(UserExpense entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> GetById(UserExpense id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

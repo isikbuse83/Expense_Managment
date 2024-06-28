@@ -13,7 +13,7 @@ namespace Expense_Managment.Repostories
 
         }
 
-        public override async Task<IEnumerable<User>> All()
+        public  async Task<IEnumerable<User>> All()
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Expense_Managment.Repostories
                 existingUser.Email = entity.Email;
                 existingUser.Password = entity.Password;
 
-                return true;
+                return true;        
             }
             catch (Exception ex)
             {

@@ -10,6 +10,11 @@ namespace Expense_Managment.configuration
         private readonly ILogger _logger;
 
         public IUserRepository User { get; private set; }
+
+     
+
+        IUserExpense IUnitOfWork.UserExpense => throw new NotImplementedException();
+
         public UnitOfWork(DataContext context, ILoggerFactory loggerFactory)
         {
             _context = context;
