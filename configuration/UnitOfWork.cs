@@ -1,7 +1,8 @@
-﻿using Expense_Managment.Data;
+﻿using Expense_Management.Data;
+using Expense_Management.Repostories;
 using Expense_Managment.Repostories;
 
-namespace Expense_Managment.configuration
+namespace Expense_Management.configuration
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
 

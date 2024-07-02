@@ -1,5 +1,5 @@
-using Expense_Managment.configuration;
-using Expense_Managment.Data;
+using Expense_Management.configuration;
+using Expense_Management.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 

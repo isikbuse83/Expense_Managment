@@ -1,12 +1,12 @@
-﻿using Expense_Managment.configuration;
-using Expense_Managment.Data;
-using Expense_Managment.Models;
+﻿using Expense_Management.configuration;
+using Expense_Management.Data;
+using Expense_Management.Models;
 using Microsoft.AspNetCore.Http;
 
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace Expense_Managment.Controllers
+namespace Expense_Management.Controllers
 
 
 {

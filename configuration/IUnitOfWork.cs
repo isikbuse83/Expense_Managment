@@ -1,6 +1,7 @@
-﻿using Expense_Managment.Repostories;
+﻿using Expense_Management.Repostories;
+using Expense_Managment.Repostories;
 
-namespace Expense_Managment.configuration
+namespace Expense_Management.configuration
 {
     public interface IUnitOfWork
     {

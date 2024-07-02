@@ -1,7 +1,7 @@
-﻿using Expense_Managment.Models;
+﻿using Expense_Management.Models;
 using System.Linq.Expressions;
 
-namespace Expense_Managment.Repostories
+namespace Expense_Management.Repostories
 {
     public interface IGenericRepository<T> where T : class
     {

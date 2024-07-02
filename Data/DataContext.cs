@@ -1,6 +1,6 @@
-﻿using Expense_Managment.Models;
+﻿using Expense_Management.Models;
 using Microsoft.EntityFrameworkCore;
-namespace Expense_Managment.Data
+namespace Expense_Management.Data
 {
 
     public class DataContext : DbContext
@@ -12,10 +12,13 @@ namespace Expense_Managment.Data
 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserExpense> UserExpenses { get; set; }
+        public virtual DbSet<Categories> Categories { get; set; }
+        public virtual DbSet<Report> Reports { get; set; }  
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Report>().HasNoKey();
         }
 
     }

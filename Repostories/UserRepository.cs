@@ -1,8 +1,7 @@
-﻿using Expense_Managment.Data;
-using Expense_Managment.Models;
+﻿using Expense_Management.Data;
+using Expense_Management.Models;
+using Expense_Management.Repostories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System.Linq.Expressions;
 
 namespace Expense_Managment.Repostories
 {

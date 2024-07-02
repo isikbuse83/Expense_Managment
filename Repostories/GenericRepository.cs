@@ -1,9 +1,9 @@
-﻿using Expense_Managment.Data;
-using Expense_Managment.Models;
+﻿using Expense_Management.Data;
+using Expense_Management.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Expense_Managment.Repostories
+namespace Expense_Management.Repostories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

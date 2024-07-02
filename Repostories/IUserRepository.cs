@@ -1,6 +1,6 @@
-﻿using Expense_Managment.Models;
+﻿using Expense_Management.Models;
 
-namespace Expense_Managment.Repostories
+namespace Expense_Management.Repostories
 {
     public interface IUserRepository : IGenericRepository<User>
     {

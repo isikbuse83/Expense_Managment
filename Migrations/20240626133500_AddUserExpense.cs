@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Expense_Managment.Migrations
+namespace Expense_Management.Migrations
 {
     /// <inheritdoc />
     public partial class AddUserExpense : Migration

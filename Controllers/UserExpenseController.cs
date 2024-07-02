@@ -1,8 +1,8 @@
-﻿using Expense_Managment.configuration;
+﻿using Expense_Management.configuration;
 using Microsoft.AspNetCore.Http;
-using Expense_Managment.Models;
+using Expense_Management.Models;
 using Microsoft.AspNetCore.Mvc;
-using Expense_Managment.Data;
+using Expense_Management.Data;
 using Microsoft.AspNetCore.Http.HttpResults;
 
 
@@ -11,13 +11,13 @@ namespace Expense_Managment.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserExpenceController : ControllerBase
+    public class UserExpenseController : ControllerBase
     {
         private readonly IUnitOfWork unitOfWork;
 
         private IUnitOfWork _unitOfWork;
 
-        public UserExpenceController(IUnitOfWork unitOfWork)
+        public UserExpenseController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
